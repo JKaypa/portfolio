@@ -2,6 +2,7 @@ import '../styles/profile.css'
 import photo from '../assets/Foto.jpg'
 
 export default function Profile() {
+  
   return (
     <section className="profile-section">
       <div></div>
