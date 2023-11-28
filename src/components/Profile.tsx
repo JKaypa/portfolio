@@ -23,7 +23,10 @@ export default function Profile() {
             </div>
           </div>
           <p className="profile-stack">Fullstack Software Developer</p>
-          <p className="profile-description">Software Engineering student</p>
+          <p>Software Engineering student</p>
+          <p className="profile-description">I am a Full Stack web developer with formal studies in Software Engineering. In addition to having experience in both
+            Front-end and Back-end technologies, I also possess strong knowledge of cloud computing and Linux server
+            management. I strive to deliver quality products and ensure an appropriate software development life cycle.</p>
         </article>
       </main>
     </section>
