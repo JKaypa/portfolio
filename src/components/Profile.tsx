@@ -29,8 +29,8 @@ export default function Profile() {
             management. I strive to deliver quality products and ensure an appropriate software development life cycle.</p>
             <div className='profile-buttons'>
               <button className='resume-button'>Resume</button>
-              <button className='resume-english'>English</button>
-              <button className='resume-spanish'>Spanish</button>
+              <a className='resume-english'>English</a>
+              <a className='resume-spanish'>Spanish</a>
             </div>
         </article>
       </main>

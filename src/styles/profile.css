@@ -84,14 +84,16 @@
 .profile-buttons{
   width: fit-content;
   display: flex;
-  gap: 10px;
+  
   align-self: flex-start;
 }
 
-.profile-buttons button{
+.profile-buttons button {
   width: 100px;
   background: var(--main-color);
+  font-size: medium;
   padding: 5px;
+  font-family: 'Oswald';
   border: none;
   overflow: hidden;
   transition: all 0.3s linear;
@@ -99,7 +101,15 @@
 
 .resume-english,
 .resume-spanish{
-  display: none;
+  width: 0px;
+  opacity: 0;
+  background: var(--main-color);
+  font-size: medium;
+  padding: 5px;
+  font-family: 'Oswald';
+  border: none;
+  overflow: hidden;
+  transition: all 0.25s ease-out;
   
 }
 
@@ -110,7 +120,10 @@
 
 .profile-buttons:hover .resume-english, 
 .profile-buttons:hover .resume-spanish {
-  display: inline-block;
+  /* display: inline-block; */
+  opacity: 1;
+  width: 100px;
+  margin-left: 5px;
 }
 
 .resume-english:hover, .resume-spanish:hover{
