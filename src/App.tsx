@@ -1,16 +1,8 @@
-import './App.css'
-import Profile from './components/Profile'
-// import VideoBg from './components/VideoBg'
+import "./App.css";
+import Profile from "./components/Profile";
 
 function App() {
-  
-
-  return (
-    <div className=''>
-      {/* <VideoBg /> */}
-      <Profile />
-    </div>
-  )
+  return <Profile />;
 }
 
-export default App
+export default App;
