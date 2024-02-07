@@ -1,5 +1,6 @@
-:root{
-  --main-color: rgb(0, 196, 199);
+:root {
+  --main-color: rgb(0, 162, 199);
+  --background: rgb(12, 22, 22);
 }
 
 * {
@@ -10,9 +11,11 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Oswald', sans-serif;
-  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: "Oswald", sans-serif;
   background-color: rgb(12, 22, 22);
   padding: 20px;
+}
+
+a {
+  text-decoration: none;
 }
