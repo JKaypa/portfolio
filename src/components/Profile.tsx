@@ -9,7 +9,6 @@ export default function Profile() {
   return (
     <section className="profile-section">
       <div></div>
-
       <picture>
         <img src={photo} alt="Jose Kaypa photography" className="photo" />
       </picture>
@@ -38,8 +37,10 @@ export default function Profile() {
             <a href={enResume} target="_blank" rel="noopener noreferrer" className="resume-english">
               English
             </a>
-            <a className="resume-spanish">Spanish</a>
-            <button className="resume-button">Resume</button>
+            <a href={enResume} target="_blank" rel="noopener noreferrer" className="resume-spanish">
+              Spanish
+            </a>
+            <button className="resume-button">My Resume</button>
           </div>
           <IconContext.Provider value={{ className: "profile-social_icon" }}>
             <div className="profile-social">
