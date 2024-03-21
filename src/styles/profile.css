@@ -23,14 +23,14 @@
   left: 0px;
   z-index: -4;
   background-color: var(--main-color);
-  width: 33%;
+  width: 30%;
   height: 77%;
   border-radius: 2%;
   opacity: 70%;
 }
 
 .inline > :nth-child(2) {
-  margin: 0 13px 0 22px;
+  margin-inline: 1rem;
 }
 
 .inline {
@@ -39,7 +39,7 @@
 }
 
 .profile-section article {
-  max-width: 575px;
+  max-width: 750px;
   font-size: 2rem;
 }
 
@@ -74,6 +74,7 @@
 }
 
 .profile-icons {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
