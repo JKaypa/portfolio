@@ -1,5 +1,4 @@
 .profile-section {
-  max-width: 1250px;
   min-height: 90vh;
   padding: 20px;
   margin: auto;
@@ -39,7 +38,7 @@
 }
 
 .profile-section article {
-  max-width: 750px;
+  max-width: 585px;
   font-size: 2rem;
 }
 
