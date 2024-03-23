@@ -1,12 +1,18 @@
 .profile-section {
   min-height: 90vh;
-  padding: 20px;
-  margin: auto;
+  /* padding: 20px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 25px;
   position: relative;
+  /* background-color: blueviolet; */
+}
+
+.profile-picture {
+  width: 800px;
+  /* background-color: chartreuse; */
+  text-align: right;
 }
 
 .photo {
@@ -29,7 +35,7 @@
 }
 
 .inline > :nth-child(2) {
-  margin-inline: 1rem;
+  margin-inline: 1.5rem;
 }
 
 .inline {
@@ -38,8 +44,9 @@
 }
 
 .profile-section article {
-  max-width: 585px;
+  max-width: 60%;
   font-size: 2rem;
+  /* background-color: blue; */
 }
 
 .profile-line-height {
@@ -50,6 +57,7 @@
 .profile-name {
   font-size: 8rem;
   display: inline-block;
+  letter-spacing: 0.4rem;
 }
 
 .profile-name::first-letter {

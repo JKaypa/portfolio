@@ -9,7 +9,7 @@ export default function Profile() {
   return (
     <section className="profile-section">
       <div></div>
-      <picture>
+      <picture className="profile-picture">
         <img src={photo} alt="Jose Kaypa photography" className="photo" />
       </picture>
 
