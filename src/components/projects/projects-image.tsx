@@ -1,9 +1,24 @@
 import "../../styles/projects.css";
 
-export default function ProjectImage({ image }: { image: string }) {
+export default function ProjectImage({
+  image,
+  title,
+  description,
+}: {
+  image: string;
+  title: string;
+  description: string;
+}) {
   return (
-    <picture>
-      <img src={image} alt={image} className="project-image" />
-    </picture>
+    <div>
+      <h1 className="projects-project_title">{title}</h1>
+      <div
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+        className="projects-project_image"
+        data-content={description}
+      />
+    </div>
   );
 }

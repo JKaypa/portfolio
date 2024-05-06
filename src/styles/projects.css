@@ -3,15 +3,51 @@
 }
 
 .projects-title {
-  margin: auto;
+  font-size: 4rem;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.2rem;
 }
 
-.project-image {
-  max-width: 30rem;
+.projects-title::first-letter {
+  color: var(--main-color);
+  font-size: 5rem;
 }
 
-.projects-project_images {
+.projects-project {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-items: center;
+}
+
+.projects-project_title {
+  text-align: center;
+  line-height: 3rem;
+}
+
+.projects-project_image {
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+.projects-project_image::before {
+  content: attr(data-content);
+  overflow: hidden;
+  visibility: hidden;
+  padding: 15px;
+  width: 470px;
+  height: 0px;
+  background-color: var(--main-color);
+  position: absolute;
+  opacity: 95%;
+  bottom: 0;
+  transition: all 0.2s ease-in;
+}
+
+.projects-project_image:hover::before {
+  height: 270px;
+  visibility: visible;
 }
