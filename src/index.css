@@ -1,18 +1,20 @@
 :root {
-  --main-color: rgb(0, 162, 199);
   --background: rgb(12, 22, 22);
+  --main-color: rgb(0, 162, 199);
+  --secondary-color: white;
+  --hover-color: violet;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: var(--secondary-color);
 }
 
 body {
   font-family: "Oswald", sans-serif;
-  background-color: rgb(12, 22, 22);
+  background-color: var(--background);
   padding: 20px;
 }
 
