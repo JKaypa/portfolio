@@ -13,9 +13,11 @@
 }
 
 body {
+  max-width: 1250px;
   font-family: "Oswald", sans-serif;
   background-color: var(--background);
   padding: 20px;
+  margin: auto;
 }
 
 a {
