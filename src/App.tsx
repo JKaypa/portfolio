@@ -1,8 +1,13 @@
-import "./App.css";
-import Profile from "./components/Profile";
+import Profile from './components/Profile'
+import { Projects } from './components/projects/Projects.tsx'
 
 function App() {
-  return <Profile />;
+  return (
+    <>
+      <Profile />
+      <Projects />
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,10 +1,11 @@
-import "../styles/profile.css";
-import photo from "../assets/Foto.jpg";
-import enResume from "../assets/FullstackJKaypa.pdf";
-import { LiaLinkedinIn, LiaGithub, LiaWhatsapp } from "react-icons/lia";
-import { IconContext } from "react-icons";
+import '../styles/profile.css'
+import photo from '../assets/Foto.jpg'
+import enResume from '../assets/FullstackJKaypa.pdf'
+import { LiaLinkedinIn, LiaGithub, LiaWhatsapp } from 'react-icons/lia'
+import { IconContext } from 'react-icons'
+import { ReactElement } from 'react'
 
-export default function Profile(): JSX.Element {
+export default function Profile(): ReactElement {
   return (
     <section className="profile">
       <div className="profile__square"></div>
@@ -51,7 +52,7 @@ export default function Profile(): JSX.Element {
             </a>
             <button className="button button--resume">My Resume</button>
           </div>
-          <IconContext.Provider value={{ className: "profile__social-icons" }}>
+          <IconContext.Provider value={{ className: 'profile__social-icons' }}>
             <div className="profile__icons">
               <a
                 href="https://www.linkedin.com/in/jkaypa/"
@@ -71,5 +72,5 @@ export default function Profile(): JSX.Element {
         </div>
       </article>
     </section>
-  );
+  )
 }
