@@ -4,7 +4,7 @@ import { Project } from './Project.tsx'
 const Projects: React.FC = () => {
   return (
     <>
-      <header>Projects</header>
+      <h1>Projects</h1>
       <p>These are some of my projects</p>
 
       <div>
