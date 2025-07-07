@@ -16,7 +16,13 @@ const projectData: Project[] = [
     name: 'Travel Nerd',
     src: 'src/assets/projects/travel-nerd-project.webp',
     alt: 'travel nerd project image',
-    description: 'Document your most exiting trips and share them with anyone',
+    description: 'Document your most exiting trips and share them with the world',
+  },
+  {
+    name: 'Travel Nerd',
+    src: 'src/assets/projects/travel-nerd-project.webp',
+    alt: 'travel nerd project image',
+    description: 'Document your most exiting trips and share them with the world',
   },
 ]
 
