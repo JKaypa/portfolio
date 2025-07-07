@@ -9,7 +9,7 @@ const Project: React.FC<Props> = ({ imgSrc, alt, name, description }) => {
   return (
     <>
       <div>
-        <img src={imgSrc} alt={alt} />
+        <img src={imgSrc} alt={alt} width={400} />
         <h2>{name}</h2>
         <p>{description}</p>
       </div>
