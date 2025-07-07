@@ -1,5 +1,5 @@
-import Profile from './components/Profile'
-import { Projects } from './components/projects/Projects.tsx'
+import Profile from './components/profile/Profile.tsx'
+import { Projects } from './components/projects/ProjectsSection.tsx'
 
 function App() {
   return (
