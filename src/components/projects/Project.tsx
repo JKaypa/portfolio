@@ -8,10 +8,10 @@ type Props = {
 const Project: React.FC<Props> = ({ imgSrc, alt, name, description }) => {
   return (
     <>
-      <div>
+      <div className="project-card">
         <img src={imgSrc} alt={alt} width={400} />
-        <h2>{name}</h2>
-        <p>{description}</p>
+        <h2 className="project-card__title">{name}</h2>
+        <p className="project-card__description">{description}</p>
       </div>
     </>
   )
