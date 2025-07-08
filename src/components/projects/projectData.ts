@@ -1,4 +1,5 @@
 type Project = {
+  id: number
   name: string
   src: string
   alt: string
@@ -7,19 +8,15 @@ type Project = {
 
 const projectData: Project[] = [
   {
+    id: 1,
     name: 'Travel-App',
     src: 'src/assets/projects/travel-app-project.webp',
     alt: 'travel app project image',
     description: 'Book your next trip with your loved ones',
   },
   {
-    name: 'Travel Nerd',
-    src: 'src/assets/projects/travel-nerd-project.webp',
-    alt: 'travel nerd project image',
-    description: 'Document your most exiting trips and share them with the world',
-  },
-  {
-    name: 'Travel Nerd',
+    id: 2,
+    name: 'Travelling Nerd',
     src: 'src/assets/projects/travel-nerd-project.webp',
     alt: 'travel nerd project image',
     description: 'Document your most exiting trips and share them with the world',
