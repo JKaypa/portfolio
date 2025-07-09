@@ -42,24 +42,27 @@
     background: transparent;
 }
 
-dialog {
+.project-dialog {
     margin: auto;
     padding: 40px;
     background-color: var(--background);
     border: none;
     border-radius: 10px;
     box-shadow: black 5px 2px 20px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-dialog button {
+.project-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.project-dialog__button {
     background-color: var(--main-color);
     width: 80px;
     height: 30px;
     border-radius: 8px;
     border: none
-}
-
-::backdrop {
-    background: rgba(0, 0, 0, 0.5);
 }
 
