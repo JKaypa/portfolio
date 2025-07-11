@@ -1,0 +1,39 @@
+.tech-button {
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    height: 3em;
+    position: relative;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s linear;
+    z-index: 100;
+}
+
+.tech-button:hover {
+    transform: scale(1.05);
+}
+
+.tech-button::before, .tech-button::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    background: var(--main-color);
+    position: absolute;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.tech-button::before {
+    transform: rotate(60deg);
+
+}
+
+.tech-button::after {
+    transform: rotate(-60deg);
+
+}
