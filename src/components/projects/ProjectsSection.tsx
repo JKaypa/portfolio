@@ -2,6 +2,7 @@ import { projectData } from './projectData.ts'
 import { Project } from './Project.tsx'
 import { useRef } from 'react'
 import './project.css'
+import { TechButton } from '../tech/techButton.tsx'
 
 const Projects: React.FC = () => {
   const dialogRef = useRef<Record<string, HTMLDialogElement | null>>({})
@@ -34,6 +35,12 @@ const Projects: React.FC = () => {
               <h1>{name}</h1>
               <img src={src} alt={alt} />
               <p>{description}</p>
+              <h2>Technologies</h2>
+              <div className="project-techs">
+                <TechButton />
+                <TechButton />
+                <TechButton />
+              </div>
               <button onClick={() => handleCloseModal(id)} className="project-dialog__button">
                 Close
               </button>
