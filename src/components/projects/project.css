@@ -49,9 +49,6 @@
     border: none;
     border-radius: 10px;
     box-shadow: black 5px 2px 20px 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .project-dialog::backdrop {
@@ -66,3 +63,9 @@
     border: none
 }
 
+.project-techs {
+    display: flex;
+    gap: 3px;
+    padding: 5px;
+    margin: 5px;
+}
