@@ -1,6 +1,8 @@
 import { projectData } from './projectData.ts'
 import { Project } from './Project.tsx'
 import { useRef } from 'react'
+import githubIcon from '../../assets/github.svg'
+import liveIcon from '../../assets/live.svg'
 import './project.css'
 
 const Projects: React.FC = () => {
@@ -24,7 +26,7 @@ const Projects: React.FC = () => {
       </header>
 
       <div className="project-grid">
-        {projectData.map(({ id, name, src, alt, description, techs }) => (
+        {projectData.map(({ id, name, src, alt, description, techs, links }) => (
           <div key={id}>
             <button onClick={() => handleShowModal(id)} className="project-button__modal">
               <Project imgSrc={src} name={name} alt={alt} description={description} />
@@ -42,6 +44,17 @@ const Projects: React.FC = () => {
                     <p>{name}</p>
                   </div>
                 ))}
+              </div>
+              <h2>Give them a chek</h2>
+              <div>
+                <a href={links.github} target="_blank" rel="noopener noreferrer">
+                  <img src={githubIcon} alt="github" className="project-techs__icon" />
+                </a>
+                {links.live && (
+                  <a href={links.live} target="_blank" rel="noopener noreferrer">
+                    <img src={liveIcon} alt="live demo" className="project-techs__icon" />
+                  </a>
+                )}
               </div>
               <button onClick={() => handleCloseModal(id)} className="project-dialog__button">
                 Close
