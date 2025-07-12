@@ -2,7 +2,6 @@ import { projectData } from './projectData.ts'
 import { Project } from './Project.tsx'
 import { useRef } from 'react'
 import './project.css'
-import { TechButton } from '../tech/techButton.tsx'
 
 const Projects: React.FC = () => {
   const dialogRef = useRef<Record<string, HTMLDialogElement | null>>({})
@@ -25,7 +24,7 @@ const Projects: React.FC = () => {
       </header>
 
       <div className="project-grid">
-        {projectData.map(({ id, name, src, alt, description }) => (
+        {projectData.map(({ id, name, src, alt, description, techs }) => (
           <div key={id}>
             <button onClick={() => handleShowModal(id)} className="project-button__modal">
               <Project imgSrc={src} name={name} alt={alt} description={description} />
@@ -37,9 +36,12 @@ const Projects: React.FC = () => {
               <p>{description}</p>
               <h2>Technologies</h2>
               <div className="project-techs">
-                <TechButton />
-                <TechButton />
-                <TechButton />
+                {techs.map(({ src, name }) => (
+                  <div>
+                    <img src={src} alt={name} key={name} className={'project-techs__icon'} />
+                    <p>{name}</p>
+                  </div>
+                ))}
               </div>
               <button onClick={() => handleCloseModal(id)} className="project-dialog__button">
                 Close
