@@ -5,7 +5,10 @@ type Project = {
   alt: string
   description: string
   techs: { src: string; name: string }[]
-  links: string[]
+  links: {
+    github: string
+    live?: string
+  }
 }
 
 const iconPath = (icon: string) => 'src/assets/tech-icons/' + icon
@@ -22,7 +25,10 @@ const projectData: Project[] = [
       { src: iconPath('react.svg'), name: 'React' },
       { src: iconPath('redux.svg'), name: 'Redux' },
     ],
-    links: ['https://github.com/JKaypa/go-travel', 'https://jk-travel-app.netlify.app/sign-in'],
+    links: {
+      github: 'https://github.com/JKaypa/go-travel',
+      live: 'https://jk-travel-app.netlify.app/sign-in',
+    },
   },
   {
     id: 2,
@@ -37,7 +43,7 @@ const projectData: Project[] = [
       { src: iconPath('express.svg'), name: 'Express' },
       { src: iconPath('mongo.svg'), name: 'MongoDB' },
     ],
-    links: [],
+    links: { github: '' },
   },
 ]
 
