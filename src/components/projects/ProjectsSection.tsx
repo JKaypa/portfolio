@@ -46,13 +46,15 @@ const Projects: React.FC = () => {
                 ))}
               </div>
               <h2>Give them a chek</h2>
-              <div>
+              <div className="project-tech__links">
                 <a href={links.github} target="_blank" rel="noopener noreferrer">
                   <img src={githubIcon} alt="github" className="project-techs__icon" />
+                  <p>Code base</p>
                 </a>
                 {links.live && (
                   <a href={links.live} target="_blank" rel="noopener noreferrer">
                     <img src={liveIcon} alt="live demo" className="project-techs__icon" />
+                    <p>Live demo</p>
                   </a>
                 )}
               </div>
