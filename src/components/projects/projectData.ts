@@ -43,7 +43,10 @@ const projectData: Project[] = [
       { src: iconPath('express.svg'), name: 'Express' },
       { src: iconPath('mongo.svg'), name: 'MongoDB' },
     ],
-    links: { github: '' },
+    links: {
+      github: 'https://github.com/JKaypa/TravellingNerd',
+      live: 'https://travelling-nerd-jkaypa.vercel.app/',
+    },
   },
 ]
 
