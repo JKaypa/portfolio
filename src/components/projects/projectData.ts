@@ -62,7 +62,7 @@ const projectData: Project[] = [
       { src: iconPath('node.svg'), name: 'Node' },
       { src: iconPath('express.svg'), name: 'Express' },
       { src: iconPath('socket-io.svg'), name: 'Socket.IO' },
-      { src: iconPath('mongo.svg'), name: 'Esbuild' },
+      { src: iconPath('esbuild.svg'), name: 'Esbuild' },
     ],
     links: {
       github: 'https://github.com/JKaypa/racingtype',
