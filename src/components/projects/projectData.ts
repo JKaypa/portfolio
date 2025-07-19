@@ -48,6 +48,27 @@ const projectData: Project[] = [
       live: 'https://travelling-nerd-jkaypa.vercel.app/',
     },
   },
+  {
+    id: 3,
+    name: 'Racing Type',
+    src: 'src/assets/projects/travel-nerd-project.webp',
+    alt: 'racing type project image',
+    description:
+      'Play with others and compete to type a given text as fast as possible in real time',
+    techs: [
+      { src: iconPath('typescript.svg'), name: 'TypeScript' },
+      { src: iconPath('html.svg'), name: 'HTML5' },
+      { src: iconPath('css.svg'), name: 'CSS3' },
+      { src: iconPath('node.svg'), name: 'Node' },
+      { src: iconPath('express.svg'), name: 'Express' },
+      { src: iconPath('socket-io.svg'), name: 'Socket.IO' },
+      { src: iconPath('mongo.svg'), name: 'Esbuild' },
+    ],
+    links: {
+      github: 'https://github.com/JKaypa/racingtype',
+      live: 'https://typing-race-bj19.onrender.com',
+    },
+  },
 ]
 
 export { projectData }
