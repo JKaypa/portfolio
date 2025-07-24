@@ -66,7 +66,7 @@ const projectData: Project[] = [
     ],
     links: {
       github: 'https://github.com/JKaypa/racingtype',
-      live: 'https://typing-race-bj19.onrender.com',
+      live: 'https://okay-steffi-kaypa-dev-4c35edc0.koyeb.app/signin',
     },
   },
 ]
