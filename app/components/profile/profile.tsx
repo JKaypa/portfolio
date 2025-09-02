@@ -1,8 +1,7 @@
 import './profile.css'
-import { ReactElement } from 'react'
 import Image from "next/image";
 
-export default function Profile(): ReactElement {
+const Profile: React.FC = () => {
   return (
       <section className="profile">
         <div className="profile__square"></div>
@@ -73,3 +72,5 @@ export default function Profile(): ReactElement {
       </section>
   )
 }
+
+export default Profile
