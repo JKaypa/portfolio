@@ -1,0 +1,134 @@
+.profile {
+    min-height: 90vh;
+    padding: 20px 0 20px 20px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+
+.profile__square {
+    position: absolute;
+    left: 0;
+    z-index: -4;
+    background-color: var(--main-color);
+    width: 30%;
+    height: 77%;
+    border-radius: 2%;
+}
+
+.profile__photo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid var(--main-color);
+}
+
+.profile__info {
+    max-width: 800px;
+    font-size: 2rem;
+    /*height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.profile__welcome {
+    line-height: 70px;
+    margin-bottom: 10px;
+}
+
+.profile__introduce {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile__pronoun {
+    margin-right: 20px;
+}
+
+.profile__name {
+    font-size: 8rem;
+    display: inline-block;
+}
+
+.profile__name::first-letter {
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+.profile__role {
+    letter-spacing: 5px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile__description {
+    font-size: large;
+    font-family: var(--open-sans), serif;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.profile__buttons {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile__resume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background: var(--main-color);
+    font-size: large;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.profile__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile__social-icons {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.15s linear;
+}
+
+.profile__social-icons:hover {
+    transform: scale(1.2);
+}
+
+.profile__social-icons:hover, .button:hover{
+    background-color: var(--main-hover-color);
+
+}
