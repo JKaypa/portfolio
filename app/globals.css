@@ -1,6 +1,7 @@
 :root {
   --background: rgb(5, 12, 26);
   --main-color: rgb(54, 105, 178);
+  --main-hover-color: rgb(48, 89, 155);
   --secondary-color: white;
 }
 
@@ -8,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--secondary-color);
 }
 
 body {
@@ -15,4 +17,9 @@ body {
   background-color: var(--background);
   padding: 20px;
   margin: auto;
+
+}
+
+a {
+  text-decoration: none;
 }
