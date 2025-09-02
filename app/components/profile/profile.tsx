@@ -14,7 +14,7 @@ export default function Profile(): ReactElement {
 
         <article className="profile__info">
           <div className="profile__welcome">
-            <p>Hello World!  🌎</p>
+            <p>Hello World! 🌎</p>
             <div className="profile__introduce">
               <span className="profile__pronoun">I&apos;m</span>
 
@@ -38,7 +38,7 @@ export default function Profile(): ReactElement {
 
             <div className="profile__icons">
               <a
-                  href="https://www.linkedin.com/in/jkaypa/"
+                  href="https://www.linkedin.com/in/jkaypa"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="See my Likedin profile"
@@ -48,7 +48,7 @@ export default function Profile(): ReactElement {
               </a>
 
               <a
-                  href="https://github.com/JKaypa  "
+                  href="https://github.com/JKaypa"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="See my GitHub profile"
