@@ -5,7 +5,6 @@ import "./globals.css";
 const oswald = Oswald({
   subsets: ["latin"],
   weight: "500",
-  variable: "--oswald"
 })
 
 const openSans = Open_Sans({
@@ -25,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${openSans.variable}`}>
+      <body className={`${oswald.className} ${openSans.variable}`}>
         {children}
       </body>
     </html>
