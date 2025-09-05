@@ -9,6 +9,7 @@ const oswald = Oswald({
 
 const openSans = Open_Sans({
   subsets: ["latin"],
+  weight: "500",
   variable: "--open-sans"
 })
 
