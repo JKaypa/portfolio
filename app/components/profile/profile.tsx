@@ -1,5 +1,5 @@
-import './profile.css'
 import Image from "next/image";
+import './profile.css'
 
 const Profile: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Profile: React.FC = () => {
         <div className="profile__square"></div>
         <picture>
           <Image src="/images/photo.webp" alt="Jose Kaypa photography" width={350} height={406}
-                 fetchPriority="high" loading="eager" className="profile__photo"
+                 fetchPriority="high" priority={true} className="profile__photo"
           />
         </picture>
 
