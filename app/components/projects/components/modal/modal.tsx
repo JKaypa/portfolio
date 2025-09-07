@@ -16,18 +16,22 @@ const Modal: React.FC<Props> = ({ id, children }) => {
   const dialogRef = useRef<HTMLDialogElement>(null)
 
   const openModal = useCallback((event: CustomEvent<number>) => {
-    if(event.detail === id)
+    if(event.detail === id) {
       dialogRef.current?.showModal()
+      document.body.style.overflow = 'hidden'
+    }
+
   }, [id])
 
   useEffect(() => {
     document.body.addEventListener('open-dialog-modal', openModal as EventListener)
+    dialogRef.current?.addEventListener('close', () => document.body.style.overflow = 'auto')
 
     return () =>
       document.body.removeEventListener('open-dialog-modal', openModal as EventListener)
 
   }, [openModal])
-  
+
 
   const handleCloseModal = () => {
       dialogRef.current?.close()
