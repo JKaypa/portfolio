@@ -10,3 +10,7 @@
     justify-content: space-between;
     padding: 20px;
 }
+
+.footer__rights-logo {
+    font-size: large;
+}
