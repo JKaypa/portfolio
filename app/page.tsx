@@ -1,9 +1,9 @@
 import Profile from "@/app/components/profile/profile";
-import ProjectList from "@/app/components/projects/project-list";
+import Projects from "@/app/components/projects/projects";
 import Footer from "@/app/components/footer/footer";
 
 export default function Home() {
   return (
-    <><Profile/><ProjectList /><Footer /></>
+    <><Profile/><Projects /><Footer /></>
   );
 }
