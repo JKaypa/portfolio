@@ -1,0 +1,31 @@
+.project-header {
+    margin-bottom: 50px;
+}
+
+.project-title {
+    font-size: 4rem;
+}
+
+.project-subtitle {
+    font-size: large;
+    font-family: sans-serif;
+    line-height: 25px;
+    text-wrap: balance;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 423px));
+    justify-items: center;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.project-modal__open-button {
+    border-radius: 20px;
+    cursor: pointer;
+    width: fit-content;
+    border: none;
+    outline: none;
+    background: transparent;
+}
