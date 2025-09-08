@@ -1,0 +1,29 @@
+.project-card {
+    border-radius: 10px;
+    border: 1px solid rgba(68, 124, 203, 0.25);
+    border-block: 3px solid rgba(68, 124, 203);
+    transition: all 0.08s linear;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card__image {
+    width: 400px;
+    height: 227px;
+
+    border-radius: 10px 10px 0 0;
+
+}
+.project-card__title {
+    margin-top: 20px;
+}
+
+.project-card__description {
+    font-family: sans-serif;
+    font-size: medium;
+    text-align: left;
+    padding: 20px;
+    width: 380px;
+}
