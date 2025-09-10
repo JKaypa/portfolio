@@ -6,11 +6,11 @@ import '../modal/modal.css'
 
 type Props = {
   id: number
-  openButtonContent: React.ReactNode
+  trigger: React.ReactNode
   children: React.ReactNode
 }
 
-const ProjectList: React.FC<Props> = ({ id, openButtonContent, children }) => {
+const ProjectList: React.FC<Props> = ({ id, trigger, children }) => {
   const modalRef = useRef(new Map<number, HTMLDialogElement | null>())
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const ProjectList: React.FC<Props> = ({ id, openButtonContent, children }) => {
   return (
       <>
         <button onClick={() => handleOpen(id)} className="project-modal__open-button">
-          { openButtonContent }
+          { trigger }
         </button>
         <dialog ref={(ref) =>  handleDialogRef(id, ref) }
                 // @ts-expect-error no error
