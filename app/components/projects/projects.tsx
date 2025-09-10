@@ -15,17 +15,13 @@ const Projects: React.FC = () => {
           </p>
         </header>
         <div className="project-grid">
-          {projectData.map(({name, src, alt, description, techs, links, id}) =>
+          {projectData.map((project) =>
               <ProjectList
-                  key={id}
-                  id={id}
-                  openButtonContent={<ProjectCard imgSrc={src} alt={alt} name={name}
-                                                  description={description}
-                                    />}
+                  key={ project.id }
+                  id={project.id}
+                  trigger={<ProjectCard project={project} />}
               >
-
-                <ModalContent name={name} src={src} alt={alt} description={description}
-                              techs={techs} links={links}/>
+                <ModalContent project={project}/>
               </ProjectList>)}
         </div>
       </div>
