@@ -1,19 +1,13 @@
 import Image from "next/image";
 import './modal.css'
+import Project from "@/app/components/projects/libs/types";
 
 type Props = {
-  name: string,
-  src: string,
-  alt: string,
-  description: string,
-  techs: { src: string; name: string }[],
-  links: {
-    github: string
-    live?: string
-  }
+  project: Project
 }
 
-const ModalContent: React.FC<Props> = ({ src, alt, techs, links, description, name }) => {
+const ModalContent: React.FC<Props> = ({ project }) => {
+  const { name, src, alt, description, techs, links } = project
 
   return (
     <div className="modal-content">
