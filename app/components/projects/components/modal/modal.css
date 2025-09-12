@@ -24,7 +24,7 @@
 .modal-content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .modal-content__head {
@@ -32,15 +32,12 @@
 }
 
 .modal-content__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .modal-content__description {
-    font-family: sans-serif;
-    font-size: medium;
+    font-family: var(--open-sans), serif;
     text-align: left;
     margin-top: 10px;
 }
@@ -51,22 +48,34 @@
     border-radius: 8px;
     border: none;
     width: 100%;
+    font-family: var(--open-sans), serif;
 }
 
 .modal-content__project-techs,
 .modal-content__tech__links {
     display: flex;
     gap: 10px;
-    padding: 20px 0;
     text-align: center;
+    margin-top: 10px;
+    font-family: var(--open-sans), serif;
+    font-size: small;
 }
 
 .modal-content__tech__icons {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .modal-content__tech__links {
     gap: 50px;
-    font-family: sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.project-links {
+    transition: transform 0.15s ease-in-out;
+}
+
+.project-links:hover {
+    transform: scale(1.1);
 }
