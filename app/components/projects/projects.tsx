@@ -7,10 +7,10 @@ import './projects.css'
 const Projects: React.FC = () => {
 
   return (
-      <div className="projects">
+      <section>
         <header className="project-header">
-          <h1 className="project-title">Check My Work</h1>
-          <p className="project-subtitle">
+          <h1 className="section-title">Check My Work</h1>
+          <p className="section-subtitle">
             These are some of my projects, click them to see more details.
           </p>
         </header>
@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
                 <ModalContent project={project}/>
               </ProjectList>)}
         </div>
-      </div>
+      </section>
   )
 }
 
