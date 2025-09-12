@@ -1,6 +1,6 @@
 import Image from "next/image";
 import './profile.css'
-import ContactIcons from "@/app/components/contact/contact-icons";
+import ContactIcons from "@/app/components/contact/contact-icons/contact-icons";
 
 const Profile: React.FC = () => {
   return (
