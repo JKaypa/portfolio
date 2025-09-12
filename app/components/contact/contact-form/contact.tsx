@@ -2,6 +2,8 @@ import Form from "next/form";
 
 const Contact: React.FC = () => {
 
+  const regexPattern = '^[a-zA-Z0-9_+&-]+(?:.[a-zA-Z0-9_+&-]+)@(?:[a-zA-Z0-9-]+.)+[a-zA-Z]{2,7}$'
+
   const handleSubmit = async (formData: FormData) => {
     'use server'
   }
@@ -14,7 +16,9 @@ const Contact: React.FC = () => {
           id="name"
           name="name"
           className="form-input"
-          placeholder="Your full name"
+          placeholder="Your name"
+          minLength={3}
+          required
       />
     </div>
 
@@ -25,7 +29,9 @@ const Contact: React.FC = () => {
           id="email"
           name="email"
           className="form-input"
-          placeholder="your.email@example.com"
+          placeholder="your email"
+          pattern={regexPattern}
+          required
       />
     </div>
 
@@ -37,13 +43,12 @@ const Contact: React.FC = () => {
           className="form-textarea"
           placeholder="Tell me about your project..."
           rows={5}
+          minLength={10}
+          required
       />
     </div>
 
-    <button
-        type="submit"
-        className="form-submit-btn"
-    >
+    <button type="submit" className="form-submit-btn">
       Send Message
     </button>
   </Form>
