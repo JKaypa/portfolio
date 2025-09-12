@@ -5,9 +5,17 @@ import './contact-form.css'
 const ContactForm: React.FC = () => {
 
   return (
-    <section>
-      <h1 className="section-title">Get In Touch</h1>
-      <p className="section-subtitle">Have a project in mind? Let&#39;s discuss how we can work together.</p>
+    <section className="section-bottom-padding">
+      <header className="section-header">
+        <h1 className="section-title">
+          Let&#39;s Work Together
+        </h1>
+        <p className="section-subtitle">
+          Got a project that needs expert development?
+          You&#39;ve found one.
+
+        </p>
+      </header>
       <div className="contact-form-container">
         <div className="contact-form-image">
           <Image
