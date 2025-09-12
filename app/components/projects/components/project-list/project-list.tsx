@@ -1,8 +1,9 @@
 'use client'
 
-import {useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
 import '../project-card/project-card.css'
 import '../modal/modal.css'
+import {lockScroll, unlockScroll} from "@/app/components/projects/libs/lock-scroll";
 
 type Props = {
   id: number
@@ -15,13 +16,13 @@ const ProjectList: React.FC<Props> = ({ id, trigger, children }) => {
 
   useEffect(() => {
     modalRef.current.get(id)?.addEventListener('close',
-        () => document.body.style.overflow = 'auto')
+        () => unlockScroll())
 
   }, [id]);
 
   const handleOpen = (id: number) => {
     modalRef.current.get(id)?.showModal()
-    document.body.style.overflow = 'hidden'
+    lockScroll()
   }
   const handleClose = (id: number) => {
     modalRef.current.get(id)?.close()
@@ -41,8 +42,8 @@ const ProjectList: React.FC<Props> = ({ id, trigger, children }) => {
                 closedby={"any"}
                 className="modal"
         >
-          <button onClick={() => handleClose(id)} className="modal-content__close-button">Close</button>
           { children }
+          <button onClick={() => handleClose(id)} className="modal-content__close-button">Close</button>
         </dialog>
       </>
   )
