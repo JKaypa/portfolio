@@ -12,9 +12,9 @@ const ModalContent: React.FC<Props> = ({ project }) => {
   return (
     <div className="modal-content">
       <section className="modal-content__head">
-        <div className="modal-content__title">
-          <h1>{name}</h1>
-        </div>
+          <h2 className="modal-content__title">
+            {name}
+          </h2>
         <Image src={src} alt={alt} width={450} height={255}/>
         <p className="modal-content__description">{description}</p>
       </section>
@@ -36,13 +36,13 @@ const ModalContent: React.FC<Props> = ({ project }) => {
         <div className="modal-content__tech__links">
           <a href={links.github} target="_blank" rel="noopener noreferrer">
             <Image src="/icons/github.svg" alt="github" width={30} height={30}
-                   className="modal-content__tech__icons"/>
+                   className="modal-content__tech__icons project-links"/>
             <p>Source code</p>
           </a>
           {links.live && (
               <a href={links.live} target="_blank" rel="noopener noreferrer">
                 <Image src="/icons/live.svg" alt="live demo" width={30} height={30}
-                       className="modal-content__tech__icons"/>
+                       className="modal-content__tech__icons project-links"/>
                 <p>Live demo</p>
               </a>
           )}
