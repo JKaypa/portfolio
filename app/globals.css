@@ -28,13 +28,21 @@ a {
   text-decoration: none;
 }
 
+.section-header {
+  margin-bottom: 50px;
+}
+
 .section-title {
   font-size: 4rem;
 }
 
 .section-subtitle {
   font-size: large;
-  font-family: sans-serif;
+  font-family: var(--open-sans), serif;
   line-height: 25px;
   text-wrap: balance;
+}
+
+.section-bottom-padding {
+  padding-bottom: 50px;
 }
