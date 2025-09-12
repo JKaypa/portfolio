@@ -7,11 +7,11 @@ import './projects.css'
 const Projects: React.FC = () => {
 
   return (
-      <section>
-        <header className="project-header">
+      <section className="section-bottom-padding">
+        <header className="section-header">
           <h1 className="section-title">Check My Work</h1>
           <p className="section-subtitle">
-            These are some of my projects, click them to see more details.
+            These are some of my projects and technologies I use. Click them to see more details.
           </p>
         </header>
         <div className="project-grid">
