@@ -1,14 +1,17 @@
-import './footer.css'
 import FullYear from "@/app/components/footer/components/full-year";
+import './footer.css'
 
 const Footer: React.FC = () => {
   return (
       <>
         <div className="footer"></div>
         <footer className="footer__content">
-          <FullYear />
-          <span>Jose Kaypa</span>
-          <span><span className="footer__rights-logo">©</span> All rights reserved</span>
+          <span>
+            <span className="footer__rights-logo">©</span>
+            <FullYear/>
+            <span> Jose Kaypa</span>
+            <span> All rights reserved</span>
+          </span>
         </footer>
       </>
   )
