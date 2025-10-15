@@ -27,7 +27,7 @@ const ContactIcons = () => {
         href="https://wa.me/573013111395"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Contact me on whatsapp"
+        aria-label="ContactForm me on whatsapp"
         className="profile__social-icons"
     >
       <Image src="/icons/whatsapp.svg" alt="whatsapp logo" width={30} height={30}/>
