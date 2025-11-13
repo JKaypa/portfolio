@@ -44,11 +44,17 @@
 
 .modal-content__close-button {
     background-color: var(--main-color);
+    font-family: Oswald, serif;
+    font-size: medium;
     padding: 8px;
     border-radius: 8px;
     border: none;
     width: 100%;
-    font-family: var(--open-sans), serif;
+    transition: transform 0.15s ease-in-out;
+}
+
+.modal-content__close-button:hover {
+    transform: scale(1.1);
 }
 
 .modal-content__project-techs,
@@ -77,5 +83,5 @@
 }
 
 .project-links:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
