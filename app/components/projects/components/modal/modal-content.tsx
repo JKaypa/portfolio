@@ -1,6 +1,6 @@
-import Image from "next/image";
+import Image from 'next/image'
+import Project from '@/app/components/projects/libs/types'
 import './modal.css'
-import Project from "@/app/components/projects/libs/types";
 
 type Props = {
   project: Project
@@ -12,21 +12,19 @@ const ModalContent: React.FC<Props> = ({ project }) => {
   return (
     <div className="modal-content">
       <section className="modal-content__head">
-          <h2 className="modal-content__title">
-            {name}
-          </h2>
-        <Image src={src} alt={alt} width={450} height={255}/>
+        <h2 className="modal-content__title">{name}</h2>
+        <Image src={src} alt={alt} width={450} height={255} />
         <p className="modal-content__description">{description}</p>
       </section>
 
       <section>
         <h2>Technologies</h2>
         <div className="modal-content__project-techs">
-          {techs.map(({src, name}) => (
-              <div key={src}>
-                <Image src={src} alt={name} width={30} height={30} className="modal-content__tech__icons"/>
-                <p>{name}</p>
-              </div>
+          {techs.map(({ src, name }) => (
+            <div key={src}>
+              <Image src={src} alt={name} width={30} height={30} className="modal-content__tech__icons" />
+              <p>{name}</p>
+            </div>
           ))}
         </div>
       </section>
@@ -35,16 +33,14 @@ const ModalContent: React.FC<Props> = ({ project }) => {
         <h2>Give it a chek</h2>
         <div className="modal-content__tech__links">
           <a href={links.github} target="_blank" rel="noopener noreferrer">
-            <Image src="/icons/github.svg" alt="github" width={30} height={30}
-                   className="modal-content__tech__icons project-links"/>
+            <Image src="/icons/github.svg" alt="github" width={30} height={30} className="modal-content__tech__icons project-links" />
             <p>Source code</p>
           </a>
           {links.live && (
-              <a href={links.live} target="_blank" rel="noopener noreferrer">
-                <Image src="/icons/live.svg" alt="live demo" width={30} height={30}
-                       className="modal-content__tech__icons project-links"/>
-                <p>Live demo</p>
-              </a>
+            <a href={links.live} target="_blank" rel="noopener noreferrer">
+              <Image src="/icons/live.svg" alt="live demo" width={30} height={30} className="modal-content__tech__icons project-links" />
+              <p>Live demo</p>
+            </a>
           )}
         </div>
       </section>
