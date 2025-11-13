@@ -1,7 +1,7 @@
 .project-card {
     border-radius: 10px;
-    border: 1px solid rgba(68, 124, 203, 0.25);
-    border-block: 3px solid rgba(68, 124, 203);
+    border: 1px solid var(--main-color-opacity);
+    border-block: 3px solid var(--main-color);
     transition: all 0.08s linear;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .project-card__description {
-    font-family: sans-serif;
+    font-family: var(--open-sans), sans-serif;
     font-size: medium;
     text-align: left;
     padding: 20px;
