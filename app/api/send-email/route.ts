@@ -12,16 +12,16 @@ export async function POST(req: NextRequest): Promise<Response> {
     return Response.json({ error: 'Too many requests, please try again later' })
   }
 
-  const userData = await req.formData()
+  const emailData = await req.formData()
 
-  const [isValid, user] = validate(userData)
+  const [isValid, email] = validate(emailData)
 
   if (!isValid) {
     return Response.json({ error: 'Invalid data' })
   }
 
   try {
-    const error = await sendEmail(user)
+    const error = await sendEmail(email)
 
     if (error) {
       return Response.json({ message: error.message })
