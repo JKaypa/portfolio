@@ -1,5 +1,5 @@
 import { Resend } from 'resend'
-import Email from '@/app/api/user-model'
+import Email from '@/app/api/email-model'
 
 const resend = new Resend(process.env.RESEND_KEY)
 
