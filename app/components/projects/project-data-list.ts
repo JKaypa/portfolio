@@ -54,8 +54,7 @@ const projectData: Project[] = [
     name: 'Racing Type',
     src: imgPath('travel-nerd-project.webp'),
     alt: 'racing type project image',
-    description:
-        'Play with others and compete to type a given text as fast as possible in real time',
+    description: 'Play with others and compete to type a given text as fast as possible in real time',
     techs: [
       { src: iconPath('typescript.svg'), name: 'TypeScript' },
       { src: iconPath('html.svg'), name: 'HTML5' },
