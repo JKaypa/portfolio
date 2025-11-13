@@ -30,7 +30,6 @@
 .profile__info {
     max-width: 800px;
     font-size: 2rem;
-    /*height: 100%;*/
     display: flex;
     flex-direction: column;
     align-content: flex-end;
