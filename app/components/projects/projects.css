@@ -1,9 +1,10 @@
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 423px));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 423px));
     justify-items: center;
     justify-content: space-evenly;
     row-gap: 50px;
+    column-gap: 10px;
 }
 
 .project-modal__open-button {
@@ -13,4 +14,10 @@
     border: none;
     outline: none;
     background: transparent;
+}
+
+@media (width <= 820px) {
+    .project-grid {
+        row-gap: 20px;
+    }
 }
