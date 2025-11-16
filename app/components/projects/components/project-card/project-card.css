@@ -10,8 +10,8 @@
 }
 
 .project-card__image {
-    width: 400px;
-    height: 227px;
+    width: 100%;
+    height: auto;
 
     border-radius: 10px 10px 0 0;
 
@@ -25,5 +25,4 @@
     font-size: medium;
     text-align: left;
     padding: 20px;
-    width: 380px;
 }
