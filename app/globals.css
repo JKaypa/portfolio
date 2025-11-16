@@ -3,6 +3,7 @@
   --main-color: rgb(54, 105, 178);
   --main-color-opacity: rgba(54, 105, 178, 0.65);
   --secondary-color: white;
+  --md: 820px;
 }
 
 html {
@@ -45,4 +46,14 @@ a {
 
 .section-bottom-padding {
   padding-bottom: 50px;
+}
+
+@media (width <= 820px){
+  .section-subtitle {
+    font-size: medium;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
 }
