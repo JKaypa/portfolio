@@ -15,3 +15,11 @@
 .footer__rights-logo {
     font-size: large;
 }
+
+@media(width <= 332px){
+    .footer__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
