@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Oswald, Open_Sans } from 'next/font/google'
 import { Toaster } from 'sonner'
 import './globals.css'
@@ -17,6 +18,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: 'Jose Kaypa',
   description: "Jose Kaypa's portfolio",
+  other: {
+    preconnect: 'https://challenges.cloudflare.com',
+  },
 }
 
 export default function RootLayout({
@@ -36,6 +40,7 @@ export default function RootLayout({
             },
           }}
         />
+        <Script src={'https://challenges.cloudflare.com/turnstile/v0/api.js'} async defer />
       </body>
     </html>
   )
