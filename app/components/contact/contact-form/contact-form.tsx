@@ -43,7 +43,7 @@ const ContactForm: React.FC = () => {
           required
         />
       </label>
-
+      <div className="cf-turnstile" data-sitekey="0x4AAAAAACBRWFN7oVke7Wwk" data-theme="auto" data-size="flexible" data-callback="onSuccess"></div>
       <button type="submit" className="form-submit-btn">
         Send Message
       </button>
