@@ -48,6 +48,44 @@ a {
   padding-bottom: 50px;
 }
 
+.auto-show {
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 90% cover 40%;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auto-show-section {
+  animation: show-section both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 30%;
+}
+
+@keyframes show-section {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+    scale: .8
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1
+  }
+}
+
 @media (width <= 820px){
   .section-subtitle {
     font-size: medium;
