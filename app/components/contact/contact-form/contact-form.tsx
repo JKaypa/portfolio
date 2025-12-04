@@ -10,12 +10,14 @@ const ContactForm: React.FC = () => {
       body: formData,
     })
 
+    const data: { message: string } = await res.json()
+
     if (!res.ok) {
-      const error = (await res.json()) as { message: string }
+      const error = data
       toast.error(error.message)
     }
 
-    const success = (await res.json()) as { message: string }
+    const success = data
     toast.success(success.message)
   }
 
