@@ -5,11 +5,11 @@ import { toast } from 'sonner'
 
 const ContactForm: React.FC = () => {
   const handleSubmit = async (formData: FormData) => {
-    const res = await fetch('http://localhost:3000/api/send-email', {
+    const res = await fetch('http://www.jkaypa.dev/api/send-email', {
       method: 'POST',
       body: formData,
     })
-
+    
     const data: { message: string } = await res.json()
 
     if (!res.ok) {
