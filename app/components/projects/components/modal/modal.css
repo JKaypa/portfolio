@@ -9,7 +9,7 @@
 
 .modal {
     margin: auto;
-    padding: 40px 60px;
+    padding: 20px;
     background-color: var(--background);
     border-inline: 1px solid rgba(68, 124, 203, 0.25);
     border-block: 3px solid rgba(68, 124, 203);
@@ -29,6 +29,11 @@
 
 .modal-content__head {
     max-width: 450px;
+}
+
+.modal-content__image {
+    width: 100%;
+    height: auto;
 }
 
 .modal-content__title {
@@ -60,6 +65,7 @@
 .modal-content__project-techs,
 .modal-content__tech__links {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     text-align: center;
     margin-top: 10px;
@@ -84,4 +90,11 @@
 
 .project-links:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 530px) {
+   .modal-content__tech__icons {
+        width: 30px;
+        height: 30px;
+    }
 }
