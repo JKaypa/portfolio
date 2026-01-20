@@ -13,7 +13,7 @@ const ModalContent: React.FC<Props> = ({ project }) => {
     <div className="modal-content">
       <section className="modal-content__head">
         <h2 className="modal-content__title">{name}</h2>
-        <Image src={src} alt={alt} width={450} height={255} />
+        <Image src={src} alt={alt} width={450} height={255} className='modal-content__image' />
         <p className="modal-content__description">{description}</p>
       </section>
 
