@@ -26,6 +26,13 @@
     border: 5px solid var(--main-color);
 }
 
+.profile__photo-background {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+}
+
 .profile__info {
     max-width: 800px;
     font-size: 2rem;
@@ -122,14 +129,14 @@
     }
 }
 
-.show_role {
-    animation: role .8s ease-in-out;
+.show_image-background {
+    animation: image-background 1s ease-in-out;
 }
 
-@keyframes role {
+@keyframes image-background {
     from {
-        opacity: 0;
-        transform: translateX(50px);
+        opacity: .7;
+        transform: translateX(-250px);
     }
 
     to{
@@ -145,7 +152,21 @@
 @keyframes image {
     from {
         opacity: 0;
-        transform: translateX(-100px);
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.show_role {
+    animation: role .8s ease-in-out;
+}
+
+@keyframes role {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
     }
 
     to{
@@ -153,7 +174,6 @@
         transform: translateX(0);
     }
 }
-
 
 .show_welcome {
     animation: welcome .8s ease-in-out;
@@ -207,29 +227,35 @@
         height: 300px;
     }
 
-    /*.profile__info {*/
-    /*    font-size: 1.8rem;*/
-    /*}*/
+    .profile__photo-background {
+        width: 300px;
+        height: 300px;
+    }
 
-    /*.profile__name {*/
-    /*    font-size: 6rem;*/
-    /*}*/
+    @keyframes square {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
 
-    /*.profile__description {*/
-    /*    font-size: medium;*/
-    /*}*/
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes image-background {
+        from {
+            opacity: .7;
+            transform: translateY(-250px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }
-
-/*@media (width <= 535px){*/
-/*    .profile__photo{*/
-/*        width: 200px;*/
-/*        height: 200px;*/
-/*    }*/
-
-/*    .profile__square{*/
-/*        height: 15%;*/
-/*    }*/
-/*}*/
 
 @media (width <= 500px) {
     .profile__square {
