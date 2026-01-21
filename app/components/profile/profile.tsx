@@ -6,7 +6,7 @@ const Profile: React.FC = () => {
   return (
     <section className="profile">
       <div className="profile__square show_square"></div>
-      <picture>
+      <picture className="profile__photo-background show_image-background">
         <Image
           src="/images/photo.webp"
           alt="Jose Kaypa photography"
@@ -43,7 +43,7 @@ const Profile: React.FC = () => {
           <ContactIcons />
         </div>
       </article>
-    </section>
+    </section >
   )
 }
 
