@@ -1,28 +1,26 @@
 .project-card {
-    border-radius: 10px;
-    border: 1px solid var(--main-color-opacity);
-    border-block: 3px solid var(--main-color);
-    transition: all 0.08s linear;
+  border-radius: 10px;
+  border: 1px solid var(--main-color-opacity);
+  border-block: 3px solid var(--main-color);
+  transition: all 0.08s linear;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+  translate: 0 -10px;
 }
 
 .project-card__image {
-    width: 100%;
-    height: auto;
-
-    border-radius: 10px 10px 0 0;
-
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
 }
 .project-card__title {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .project-card__description {
-    font-family: var(--open-sans), sans-serif;
-    font-size: medium;
-    text-align: left;
-    padding: 20px;
+  font-family: var(--open-sans), sans-serif;
+  font-size: medium;
+  text-align: left;
+  padding: 20px;
 }
