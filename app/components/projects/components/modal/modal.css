@@ -59,7 +59,7 @@
 }
 
 .modal-content__close-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .modal-content__project-techs,
