@@ -33,6 +33,26 @@ const projectData: Project[] = [
   },
   {
     id: 2,
+    name: 'Typing Race',
+    src: imgPath('type-race.png'),
+    alt: 'typing race project image',
+    description: 'Play with others and compete to type a given text as fast as possible in real time',
+    techs: [
+      { src: iconPath('typescript.svg'), name: 'TypeScript' },
+      { src: iconPath('html.svg'), name: 'HTML5' },
+      { src: iconPath('css.svg'), name: 'CSS3' },
+      { src: iconPath('node.svg'), name: 'Node' },
+      { src: iconPath('express.svg'), name: 'Express' },
+      { src: iconPath('socket-io.svg'), name: 'Socket.IO' },
+      { src: iconPath('esbuild.svg'), name: 'Esbuild' },
+    ],
+    links: {
+      github: 'https://github.com/JKaypa/racingtype',
+      live: 'https://okay-steffi-kaypa-dev-4c35edc0.koyeb.app/signin',
+    },
+  },
+  {
+    id: 3,
     name: 'Travelling Nerd',
     src: imgPath('travel-nerd-project.webp'),
     alt: 'travel nerd project image',
@@ -47,26 +67,6 @@ const projectData: Project[] = [
     links: {
       github: 'https://github.com/JKaypa/TravellingNerd',
       live: 'https://travelling-nerd-jkaypa.vercel.app/',
-    },
-  },
-  {
-    id: 3,
-    name: 'Racing Type',
-    src: imgPath('travel-nerd-project.webp'),
-    alt: 'racing type project image',
-    description: 'Play with others and compete to type a given text as fast as possible in real time',
-    techs: [
-      { src: iconPath('typescript.svg'), name: 'TypeScript' },
-      { src: iconPath('html.svg'), name: 'HTML5' },
-      { src: iconPath('css.svg'), name: 'CSS3' },
-      { src: iconPath('node.svg'), name: 'Node' },
-      { src: iconPath('express.svg'), name: 'Express' },
-      { src: iconPath('socket-io.svg'), name: 'Socket.IO' },
-      { src: iconPath('esbuild.svg'), name: 'Esbuild' },
-    ],
-    links: {
-      github: 'https://github.com/JKaypa/racingtype',
-      live: 'https://okay-steffi-kaypa-dev-4c35edc0.koyeb.app/signin',
     },
   },
 ]
